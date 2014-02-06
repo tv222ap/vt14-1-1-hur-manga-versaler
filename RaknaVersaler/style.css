@@ -1,0 +1,26 @@
+﻿body {
+    width: 500px;
+    margin: auto;
+}
+
+.rubrik {
+    color:black;
+    font-size: 45px;
+    border-bottom: 2px solid black;
+
+}
+
+.felmedd {
+    color: red;
+    font-size: 32px;
+}
+
+.knapp {
+    display:block;
+    margin: 10px 0;
+    width: 250px;
+}
+
+.resultat {
+    margin: 10px;
+}
