@@ -5,6 +5,7 @@ using System.Web;
 
 namespace RaknaVersaler.Model
 {
+    // Analyzer to count number of capitals
     public class TextAnalyzer
     {
         public string StringToCount { get; set; }

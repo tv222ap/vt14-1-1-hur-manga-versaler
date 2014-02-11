@@ -10,11 +10,12 @@
 <body>
     <form id="form1" runat="server">
     <div>
+        <%--Create textbox and button in form --%>
         <p class="rubrik">Räkna versaler</p>
-        <asp:TextBox ID="MainTextBox" runat="server" TextMode="MultiLine" Width="500px" Height="250px"></asp:TextBox>
-                
+        <asp:TextBox ID="MainTextBox" runat="server" TextMode="MultiLine" Width="500px" Height="250px"></asp:TextBox>       
         <asp:Button ID="CountButton" runat="server" Text="Räkna versaler" OnClick="CountButton_Click" CssClass="knapp" />
         
+        <%--Placeholder for result. Initially set not visible --%>
         <asp:PlaceHolder ID="ResultatPlaceHolder" runat="server" Visible="false">
             Antalet versaler:
             <asp:Label ID="Resultat" runat="server" Text="" CssClass="resultat"></asp:Label>

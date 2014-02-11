@@ -19,7 +19,7 @@ namespace RaknaVersaler
 
         protected void CountButton_Click(object sender, EventArgs e)
         {
-            
+            // If button previously pressed clear textbox and reset countbutton
             if (ViewState["buttonPressed"]!=null)
             {
 
@@ -31,8 +31,8 @@ namespace RaknaVersaler
                 ResultatPlaceHolder.Visible = false;
             }
             
-            else
-            { 
+            else // If button not pressed, use TextAnalyzer to count number of capitals
+            {    // Change button text to Clear
                 var NumCapitals = new TextAnalyzer
                 {
                     StringToCount = MainTextBox.Text
